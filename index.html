@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Intro component with sign up form</title>
+
+</head>
+<body>
+  <!------------------------ The paragraph--------------------------------->
+  <section class="intro">
+    <content>
+      <h1>Learn to code by watching others</h1>
+
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    </content>
+
+  </section>
+
+  <!------------------------ The card--------------------------------->
+  <main>
+    <a href="#">
+      <button class="try"><span>Try it free 7 days</span> then $20/mo. thereafter</button>
+    </a>
+
+    <section class="forms">
+      <form name="newuser" method="get">
+        <input type="text" name="userFName" placeholder="First Name" autocomplete="off">
+        <input type="text" name="userLName" placeholder="Last Name" autocomplete="off"> 
+        <input type="text" name="Email" placeholder="Email Address" autocomplete="off">
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit" class="submit"><p>Claim your free trial</p></button>
+      </form>
+
+      <p class="terms">By clicking the button, you are agreeing to our <span><a href="#">Terms and Services</a></span></p>
+    </section>
+  </main>
+  
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

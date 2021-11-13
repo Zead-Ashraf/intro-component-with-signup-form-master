@@ -1,0 +1,240 @@
+html, body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-size: 16px;
+	font-family: Poppins, sans-serif;
+}
+
+body {
+	background-image: url("../images/bg-intro-desktop.png");
+	background-color: hsl(0, 100%, 74%);
+}
+
+@media (max-width: 992px) {
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+   		align-items: center;
+	}
+}
+
+/******************************************************************************/
+
+section.intro {
+	position: relative;
+	width: 35vw;
+	height: 100vh;
+	display: inline;
+	float: left;
+	margin-left: 10vw;
+	margin-right: 5vw;
+}
+
+section.intro content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 50ch;
+	color: white;
+}
+
+section.intro content h1 {
+	font-size: 3rem;
+	margin-bottom: 0;
+	line-height: 1em;
+}
+
+section.intro content p {
+	line-height: 1.5em;
+}
+
+@media (max-width: 992px) {
+	section.intro {
+		position: relative;
+	    width: 97vw;
+	    height: 24vh;
+	}
+}
+
+/******************************************************************************/
+
+
+main {
+	width: 40vw;
+	height: 100vh;
+	float: right;
+	margin-right: 10vw;
+	padding-top: 10%;
+}
+
+@media (max-width: 992px) {
+	main {
+		width: 58vh;
+   		height: 70vh;
+   		margin-right: 0;
+   		padding-top: 0;
+	}
+}
+
+/******************************************************************************/
+
+main button.try {
+	display: block;
+	width: 100%;
+	height: 5.5%;
+	border: none;
+	border-radius: 7px;
+	margin-bottom: 2rem;
+	background-color: hsl(248, 32%, 49%);
+	color: white;
+	font-size: 1em;
+	box-shadow: hsl(0deg 0% 0% / 45%) 0px 6px 2px 0px;
+	cursor: pointer;
+	transition: box-shadow 1s ease;
+}
+
+main button.try span {
+	font-weight: 600;
+}
+
+main a {
+	text-decoration: none;
+}
+
+main button.try:hover {
+	box-shadow: hsl(0deg 0% 0% / 45%) 0px 6px 2px 0px, 
+	inset 0px 100px 0px 0px hsl(6, 100%, 80%);
+}
+
+@media (max-width: 992px) {
+	main button.try {
+		width: 90%;
+		height: 10.5%;
+	    margin: 5%;
+	}
+}
+
+/******************************************************************************/
+
+main section.forms {
+	width: 100%;
+	height: 61%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+main section.forms form {
+	height: 90%;
+}
+
+main section.forms form input {
+	width: 80%;
+    height: 11%;
+    margin: 3% 6%;
+    font-size: 1rem;
+    padding-left: 3%;
+    font-weight: 600;
+}
+
+main section.forms form input:nth-child(1) {
+	margin-top: 8%;
+}
+
+main section.forms form input::placeholder {
+	padding-left: 1em;
+	font-size: 1rem;
+	font-weight: 600;
+
+}
+
+main section.forms form input:focus-visible {
+	outline-color: hsl(249, 10%, 26%);
+}
+
+main section.forms button.submit {
+	position: relative;
+	width: 85%;
+	height: 12%;
+	margin: 2% 6%;
+	background-color: hsl(154, 59%, 51%);
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 1em;
+	word-spacing: 3px;
+	font-weight: 600;
+	text-transform: uppercase;
+	box-shadow: hsl(154deg 92% 25%) 0px 4px 2px 0px;
+	transition-delay: 1000ms;
+	transition: box-shadow 1s ease;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+main section.forms button.submit:hover {
+	box-shadow: hsl(0deg 0% 0% / 45%) 0px 6px 2px 0px, 
+	inset 0px -100px 0px 0px #673ab7;
+}
+
+main section.forms button.submit:hover p {
+	display: none;
+}
+
+main section.forms button.submit::after {
+	content: "Hello! ^-^";
+	opacity: 0;
+	padding-left: 0
+}
+
+main section.forms button.submit:hover::after {
+	opacity: 1;
+	transition: opacity 1s ease;
+}
+
+@media (max-width: 992px) {
+	main section.forms {
+		width: 89%;
+    	height: 83%;
+  		margin: 5.5%;
+	}
+}
+
+/******************************************************************************/
+
+main section.forms p.terms {
+    font-size: .8em;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: hsl(246, 25%, 77%);
+    font-weight: 600;
+}
+
+main section.forms p.terms span a {
+	color: hsl(0, 100%, 74%);
+	text-decoration: none;
+	
+}
+
+main section.forms p.terms span a:hover {
+	color: hsl(154, 59%, 51%);
+	transition: color 400ms ease-in-out;
+}
+
+main section.forms p.terms span a:active {
+	color: hsl(248, 32%, 49%);
+	transition: 100ms;
+}
+
+/******************************************************************************/
+
+.wrong {
+	outline-style: auto;
+	outline-color: hsl(0, 100%, 74%);
+}
