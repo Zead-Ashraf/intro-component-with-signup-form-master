@@ -1,7 +1,4 @@
 #Intro component with sign up form
-
-![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)
-
 ## Welcome! 👋
 This is a simple sign-up form, which helps you to fill it correctly,
 1. it helps you find the un-filled inputs.
@@ -18,6 +15,5 @@ I am working on more options to make the page greater as like:
 1. a generator for a password
 2. autocompelete for the gmail
 3. sign-in page tests if the (account) is valid
-
 
 **Have Trying it** 🚀
