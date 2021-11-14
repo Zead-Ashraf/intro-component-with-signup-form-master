@@ -22,6 +22,13 @@ body {
 	}
 }
 
+@media (orientation: landscape) and (max-width: 992px) {
+	body {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+
 /******************************************************************************/
 
 section.intro {
@@ -56,8 +63,44 @@ section.intro content p {
 @media (max-width: 992px) {
 	section.intro {
 		position: relative;
-	    width: 97vw;
+	    width: 100vw;
 	    height: 24vh;
+	    margin: 0;
+	}
+
+	section.intro content {
+		width: 40ch;
+	}
+
+	section.intro content h1 {
+		font-size: 2.65rem;
+	    text-align: center;
+		margin: 0;
+	}
+
+	section.intro content p {
+	    font-size: 1rem;
+	    text-align: center;
+	    margin: 0;
+	}
+}
+
+@media (orientation: landscape) and (max-width: 992px) {
+	section.intro {
+		width: 44vw;
+	    height: 100vh;
+	}
+
+	section.intro content {
+		width: 33ch;
+	}
+
+	section.intro content h1 {
+		font-size: 2rem;
+	}
+
+	section.intro content p {
+		font-size: .9rem;
 	}
 }
 
@@ -78,6 +121,18 @@ main {
    		height: 70vh;
    		margin-right: 0;
    		padding-top: 0;
+	}
+}
+
+@media (orientation: landscape) and (max-width: 992px) {
+	main {
+		width: 91vh;
+    	height: 100vh;
+    	margin-top: 0;
+	}
+
+	main a {
+		display: none;
 	}
 }
 
@@ -185,6 +240,10 @@ main section.forms button.submit:hover p {
 	display: none;
 }
 
+main section.forms button.submit p {
+	margin: 5%;
+}
+
 main section.forms button.submit::after {
 	content: "Hello! ^-^";
 	opacity: 0;
@@ -204,14 +263,21 @@ main section.forms button.submit:hover::after {
 	}
 }
 
+@media (orientation: landscape) and (max-width: 992px) {
+	main section.forms {
+		width: 100%;
+    	height: 100%;
+    	margin: 0;
+	}
+}
+
 /******************************************************************************/
 
 main section.forms p.terms {
     font-size: .8em;
-    width: 90%;
+    width: 100%;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0;
     color: hsl(246, 25%, 77%);
     font-weight: 600;
 }
@@ -230,6 +296,12 @@ main section.forms p.terms span a:hover {
 main section.forms p.terms span a:active {
 	color: hsl(248, 32%, 49%);
 	transition: 100ms;
+}
+
+@media (orientation: landscape) and (max-width: 992px) {
+	main section.forms p.terms {
+		display: none;
+	}
 }
 
 /******************************************************************************/
