@@ -231,6 +231,15 @@ main section.forms button.submit {
 	cursor: pointer;
 }
 
+main section.forms button.submit p {
+	margin: 0%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
 main section.forms button.submit:hover {
 	box-shadow: hsl(0deg 0% 0% / 45%) 0px 6px 2px 0px, 
 	inset 0px -100px 0px 0px #673ab7;
@@ -238,10 +247,6 @@ main section.forms button.submit:hover {
 
 main section.forms button.submit:hover p {
 	display: none;
-}
-
-main section.forms button.submit p {
-	margin: 5%;
 }
 
 main section.forms button.submit::after {
@@ -277,7 +282,7 @@ main section.forms p.terms {
     font-size: .8em;
     width: 100%;
     text-align: center;
-    margin: 0;
+    margin: 2% 0 0 0;
     color: hsl(246, 25%, 77%);
     font-weight: 600;
 }
