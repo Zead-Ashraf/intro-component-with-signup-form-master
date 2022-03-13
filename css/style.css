@@ -1,6 +1,6 @@
 html, body {
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -34,7 +34,7 @@ body {
 section.intro {
 	position: relative;
 	width: 35vw;
-	height: 100vh;
+	height: 100%;
 	display: inline;
 	float: left;
 	margin-left: 10vw;
@@ -63,13 +63,13 @@ section.intro content p {
 @media (max-width: 992px) {
 	section.intro {
 		position: relative;
-	    width: 100vw;
-	    height: 24vh;
+	    width: 100%;
+	    height: 24%;
 	    margin: 0;
 	}
 
 	section.intro content {
-		width: 40ch;
+		width: 100%;
 	}
 
 	section.intro content h1 {
@@ -88,7 +88,7 @@ section.intro content p {
 @media (orientation: landscape) and (max-width: 992px) {
 	section.intro {
 		width: 44vw;
-	    height: 100vh;
+	    height: 100%;
 	}
 
 	section.intro content {
@@ -109,7 +109,7 @@ section.intro content p {
 
 main {
 	width: 40vw;
-	height: 100vh;
+	height: 100%;
 	float: right;
 	margin-right: 10vw;
 	padding-top: 10%;
@@ -117,8 +117,8 @@ main {
 
 @media (max-width: 992px) {
 	main {
-		width: 58vh;
-   		height: 70vh;
+		width: 100%;
+   		height: 70%;
    		margin-right: 0;
    		padding-top: 0;
 	}
@@ -126,8 +126,8 @@ main {
 
 @media (orientation: landscape) and (max-width: 992px) {
 	main {
-		width: 91vh;
-    	height: 100vh;
+		width: 50%;
+    	height: 100%;
     	margin-top: 0;
 	}
 
